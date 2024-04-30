@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Personal</title>
+  <link rel="stylesheet" href="prueba.css">
+</head>
+<body>
+  <header>
+    <h1>Frank Marí Del prado</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#formulario">Formulario</a></li>
+        <li><a href="Currículum_FMD.pdf">Currículum</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="inicio">
+      <h2>¡Bienvenido a mi landing page!</h2>
+      <p>Hola, soy Frank Marí Del prado.
+        <br>Tengo 25 años, nací en el 1998 y desde que tengo uso de razón tengo una curiosidad indomable, 
+        <br>por eso me adentré en el mundo de la programación.
+      </p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="proyectos">
+      <h2>Mis Proyectos</h2>
+      <p>Pinchando <a href="#contacto">aquí</a>, redirigirá a la sección de 'Contacto', donde puedes acceder a alguno de mis proyectos más destacados en Github.</p>
+      <div class="htmlcss">
+        <img src="img/html5.png" alt="HTML5">
+        <img src="img/css.jpg" alt="CSS">
+        <img src="img/java.webp" alt="JAVA">
+        <img src="img/mysql.png" alt="MYSQL">
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="formulario">
+    <div>
+      <h2>Formulario de Contacto</h2>
+      <legend>Puedes ponerte en contacto conmigo rellenando el siguiente formulario</legend>
+      <form class="" id="contacto" action="enviarFormulario.php" method="POST">
+          <p class="formularioCampo">Nombre:</p>
+            <input class="formularioInput" type="text" name="nombre" id="nombre" required>
+          <p class="formularioCampo">Email:</p>
+            <input class="formularioInput" type="email" name="email" id="email" required>
+          <p class="formularioCampo">Mensaje:</p>
+            <textarea name="mensaje" class="formularioTextarea" id="mensaje" cols="30" rows="10" required></textarea>
+          <input class="formularioEnviar" type="submit" value="Enviar">
+            <input type="hidden" name="recaptcha_response" id="recaptchaResponse"> 
+      </form>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="curriculum">
+      <h2>Mi Currículum</h2>
+      <p><a href="Currículum_FMD.pdf">Aquí</a> puedes encontrar información sobre mi experiencia y habilidades personales y profesionales, fuera de la programación.</p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Puedes contactarme a través de mis redes sociales:</p>
+      <ul class="redesSociales">
+        <li>
+            <a href="mailto:frankmaridelprado@gmail.com" title="Envíame un correo">
+                <ion-icon name="logo-correo"><img src="icon/icon-mensaje.png" alt=""></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="www.linkedin.com/in/frank-marí-5412562b8" title="Visita mi perfil en LinkedIn">
+                <ion-icon name="logo-linkedin"><img src="icon/icon-linkedin.png" alt=""></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/FrankMDp" title="Visita mi perfil en Github">
+                <ion-icon name="logo-github"><img src="icon/icon-github.png" alt=""></ion-icon>
+            </a>
+        </li>
+    </ul>
+    </section>
+  </main>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p>&copy; 2024 Mi Landing Page - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
