@@ -52,7 +52,7 @@ body {
     border-radius: 12px;
     transition: 0.6s;
   }
-  a{
+  a .link{
     color: white;
   }
 
